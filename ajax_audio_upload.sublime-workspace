@@ -51,7 +51,7 @@
 			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 884,
+				"buffer_size": 882,
 				"line_ending": "Unix"
 			}
 		},
@@ -60,6 +60,46 @@
 			"settings":
 			{
 				"buffer_size": 1664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 926,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/media/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 3047,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/application.rb",
+			"settings":
+			{
+				"buffer_size": 2766,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/media_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2113,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/medium.rb",
+			"settings":
+			{
+				"buffer_size": 103,
 				"line_ending": "Unix"
 			}
 		}
@@ -180,7 +220,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -188,15 +228,15 @@
 					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 884,
+						"buffer_size": 882,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								859,
-								859
+								189,
+								189
 							]
 						],
 						"settings":
@@ -221,8 +261,8 @@
 						"selection":
 						[
 							[
-								700,
-								700
+								693,
+								693
 							]
 						],
 						"settings":
@@ -230,6 +270,144 @@
 							"syntax": "Packages/Ruby/Ruby.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 926,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								926,
+								926
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/media/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 3047,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1702,
+								1702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/application.rb",
+					"settings":
+					{
+						"buffer_size": 2766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2755,
+								2755
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 255.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/media_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1076,
+								1076
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/models/medium.rb",
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

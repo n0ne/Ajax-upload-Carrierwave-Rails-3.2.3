@@ -40,12 +40,16 @@ class MediaController < ApplicationController
   # POST /media
   # POST /media.json
   def create
-    @medium = Medium.new(params[:medium])
+
+    file = params[:qqfile].is_a?(ActionDispatch::Http::UploadedFile) ? params[:qqfile] : params[:file]
+    
+    @medium = Medium.new(audio: file)
 
     respond_to do |format|
       if @medium.save
-        format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
-        format.json { render json: @medium, status: :created, location: @medium }
+        # format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
+        # format.json { render json: @medium, status: :created, location: @medium }
+        format.json { render json: {:success => true, :id => @medium.id} }
       else
         format.html { render action: "new" }
         format.json { render json: @medium.errors, status: :unprocessable_entity }

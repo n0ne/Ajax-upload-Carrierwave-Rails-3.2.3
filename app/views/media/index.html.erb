@@ -1,3 +1,44 @@
+<div id="file-uploader">
+    <noscript>
+        <p>Please enable JavaScript to use file uploader.</p>
+        <!-- or put a simple form for upload here -->
+    </noscript>
+</div>
+<script>
+var uploader = new qq.FileUploader({
+    // pass the dom node (ex. $(selector)[0] for jQuery users)
+    // debug: true,
+    element: document.getElementById('file-uploader'),
+    // path to server-side upload script
+    action: '<%= media_path %>',
+    onComplete: function(id, fileName, responseJSON){
+        // if ($('.qq-upload-file:contains(\'' + fileName + '\')')) {
+        //   console.log($('.qq-upload-file:contains(\'' + fileName + '\')').parent());
+        //   $('.qq-upload-file:contains(\'' + fileName + '\')').parent().delay(2000).fadeOut();
+        // }
+        // //alert($('.qq-upload-file').html());
+        // // alert(responseJSON.id);
+        // var str = '<li class="span3" id="picture_' + responseJSON.id + '">' +
+        //     '<div class="thumbnail">' +
+        //       '<img src="' + responseJSON.src + '" alt="">' +
+              
+        //           '<a href="<%= edit_medium_path(:id =>' + responseJSON.id + ') %>" class="btn btn-mini">' +
+        //             '<i class="icon-edit "></i>' +
+        //             'Редактировать' +
+        //           '</a>' +
+        //           '<a class="btn btn-mini btn-delete" data-confirm="Вы уверены?" data-method="delete" href="<%= media_path(:id => ' + responseJSON.id + ') %>" ' +
+        //             '<i class="icon-trash"></i>' +
+        //             'Удалить ' +
+        //           '</a>' +
+             
+        //     '</div>' +
+        //   '</li>';
+        // $(str).prependTo($('.thumbnails'));
+
+    }
+});
+</script>
+
 <%- model_class = Medium.new.class -%>
 <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 <table class="table table-striped">
