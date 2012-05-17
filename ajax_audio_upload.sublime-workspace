@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"lin",
+				"link_to"
+			],
+			[
 				"up",
 				"uploads"
 			],
@@ -75,7 +79,7 @@
 			"file": "app/views/media/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 3047,
+				"buffer_size": 3132,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +95,7 @@
 			"file": "app/controllers/media_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2113,
+				"buffer_size": 2094,
 				"line_ending": "Unix"
 			}
 		},
@@ -101,6 +105,30 @@
 			{
 				"buffer_size": 103,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/media/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/media.js.coffee",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/jquery.media.js",
+			"settings":
+			{
+				"buffer_size": 15995,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -136,6 +164,8 @@
 	},
 	"file_history":
 	[
+		"/home/none/rails/ajax_audio_upload/app/assets/javascripts/jquery.metadata.js",
+		"/home/none/rails/ajax_audio_upload/app/assets/javascripts/application.js",
 		"/home/none/rails/ajax_upload/app/controllers/application_controller.rb",
 		"/home/none/rails/ajax_upload/app/assets/stylesheets/application.css",
 		"/home/none/rails/ajax_upload/app/assets/stylesheets/fileuploader.css",
@@ -220,7 +250,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -235,8 +265,8 @@
 						"selection":
 						[
 							[
-								189,
-								189
+								210,
+								210
 							]
 						],
 						"settings":
@@ -289,8 +319,8 @@
 						"selection":
 						[
 							[
-								926,
-								926
+								277,
+								277
 							]
 						],
 						"settings":
@@ -310,15 +340,15 @@
 					"file": "app/views/media/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 3047,
+						"buffer_size": 3132,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1702,
-								1702
+								1161,
+								1161
 							]
 						],
 						"settings":
@@ -328,7 +358,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 663.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -366,15 +396,15 @@
 					"file": "app/controllers/media_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2113,
+						"buffer_size": 2094,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1076,
-								1076
+								1214,
+								1214
 							]
 						],
 						"settings":
@@ -411,6 +441,87 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/media/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								274,
+								274
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/assets/javascripts/media.js.coffee",
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/Syntaxes/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/assets/javascripts/jquery.media.js",
+					"settings":
+					{
+						"buffer_size": 15995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4625,
+								4654
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -469,7 +580,7 @@
 		[
 			[
 				"",
-				"/home/none/rails/ajax_upload/ajax-upload.sublime-project"
+				"/home/none/rails/test_uploadify/test_uploadify.sublime-project"
 			]
 		],
 		"width": 380.0

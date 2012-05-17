@@ -41,7 +41,7 @@ var uploader = new qq.FileUploader({
 
 <%- model_class = Medium.new.class -%>
 <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
-<table class="table table-striped">
+<table class="table">
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
@@ -54,7 +54,9 @@ var uploader = new qq.FileUploader({
     <% @media.each do |medium| %>
       <tr>
         <td><%= link_to medium.id, medium_path(medium) %></td>
-        <td><%= medium.audio %></td>
+        <!-- <td><%= medium.audio %></td> -->
+        <td><%= link_to "", medium.audio.url, :class => "media" %></td>
+        <td></td>
         <td><%=l medium.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
