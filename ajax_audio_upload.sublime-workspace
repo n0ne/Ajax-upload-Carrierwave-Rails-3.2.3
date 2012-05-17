@@ -43,6 +43,17 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "source 'https://rubygems.org'\n\ngem 'rails', '3.2.3'\n\n# Bundle edge Rails instead:\n# gem 'rails', :git => 'git://github.com/rails/rails.git'\n\ngem 'sqlite3'\n\ngem 'carrierwave'\ngem 'rmagick'\n\n# gem 'rack-raw-upload'\n\n# Gems used only for assets and not required\n# in production environments by default.\ngroup :assets do\n  gem 'sass-rails',   '~> 3.2.3'\n  gem 'coffee-rails', '~> 3.2.1'\n\n  # See https://github.com/sstephenson/execjs#readme for more supported runtimes\n  gem 'therubyracer', :platform => :ruby\n\n  gem 'uglifier', '>= 1.0.3'\nend\n\ngem 'jquery-rails'\n\n# To use ActiveModel has_secure_password\n# gem 'bcrypt-ruby', '~> 3.0.0'\n\n# To use Jbuilder templates for JSON\n# gem 'jbuilder'\n\n# Use unicorn as the app server\n# gem 'unicorn'\n\n# Deploy with Capistrano\n# gem 'capistrano'\n\n# To use debugger\n# gem 'ruby-debug19', :require => 'ruby-debug'\n",
+			"file": "Gemfile",
+			"file_size": 794,
+			"file_write_time": 1337241767000000,
+			"settings":
+			{
+				"buffer_size": 849,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -160,8 +171,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 849,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
