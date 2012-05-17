@@ -1,0 +1,14 @@
+<%= form_for @medium, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :audio, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :audio, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                media_path, :class => 'btn' %>
+  </div>
+<% end %>
