@@ -52,22 +52,6 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
-			"settings":
-			{
-				"buffer_size": 882,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/uploaders/audio_uploader.rb",
-			"settings":
-			{
-				"buffer_size": 1664,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
@@ -80,14 +64,6 @@
 			"settings":
 			{
 				"buffer_size": 3132,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/application.rb",
-			"settings":
-			{
-				"buffer_size": 2766,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,7 +103,7 @@
 			"file": "app/assets/javascripts/jquery.media.js",
 			"settings":
 			{
-				"buffer_size": 15995,
+				"buffer_size": 16045,
 				"line_ending": "Windows"
 			}
 		}
@@ -164,6 +140,9 @@
 	},
 	"file_history":
 	[
+		"/home/none/rails/ajax_audio_upload/Gemfile",
+		"/home/none/rails/ajax_audio_upload/app/uploaders/audio_uploader.rb",
+		"/home/none/rails/ajax_audio_upload/config/application.rb",
 		"/home/none/rails/ajax_audio_upload/app/assets/javascripts/jquery.metadata.js",
 		"/home/none/rails/ajax_audio_upload/app/assets/javascripts/application.js",
 		"/home/none/rails/ajax_upload/app/controllers/application_controller.rb",
@@ -250,65 +229,11 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
-					"settings":
-					{
-						"buffer_size": 882,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								210,
-								210
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/uploaders/audio_uploader.rb",
-					"settings":
-					{
-						"buffer_size": 1664,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								693,
-								693
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
@@ -336,7 +261,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 1,
 					"file": "app/views/media/index.html.erb",
 					"settings":
 					{
@@ -358,41 +283,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 663.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "config/application.rb",
-					"settings":
-					{
-						"buffer_size": 2766,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2755,
-								2755
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 255.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "app/controllers/media_controller.rb",
 					"settings":
 					{
@@ -420,7 +317,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
 					"file": "app/models/medium.rb",
 					"settings":
 					{
@@ -446,7 +343,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 4,
 					"file": "app/views/media/show.html.erb",
 					"settings":
 					{
@@ -474,7 +371,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "app/assets/javascripts/media.js.coffee",
 					"settings":
 					{
@@ -500,19 +397,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 6,
 					"file": "app/assets/javascripts/jquery.media.js",
 					"settings":
 					{
-						"buffer_size": 15995,
+						"buffer_size": 16045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4625,
-								4654
+								4631,
+								4631
 							]
 						],
 						"settings":
@@ -580,7 +477,7 @@
 		[
 			[
 				"",
-				"/home/none/rails/test_uploadify/test_uploadify.sublime-project"
+				"/home/none/rails/ajax_upload/ajax-upload.sublime-project"
 			]
 		],
 		"width": 380.0

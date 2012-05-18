@@ -9,15 +9,24 @@ var uploader = new qq.FileUploader({
     // pass the dom node (ex. $(selector)[0] for jQuery users)
     // debug: true,
     element: document.getElementById('file-uploader'),
+    allowedExtensions: ['mp3', 'wav'],
     // path to server-side upload script
     action: '<%= media_path %>',
     onComplete: function(id, fileName, responseJSON){
-        // if ($('.qq-upload-file:contains(\'' + fileName + '\')')) {
-        //   console.log($('.qq-upload-file:contains(\'' + fileName + '\')').parent());
-        //   $('.qq-upload-file:contains(\'' + fileName + '\')').parent().delay(2000).fadeOut();
-        // }
+        if ($('.qq-upload-file:contains(\'' + fileName + '\')')) {
+          console.log($('.qq-upload-file:contains(\'' + fileName + '\')').parent());
+          $('.qq-upload-file:contains(\'' + fileName + '\')').parent().delay(2000).fadeOut();
+        }
         // //alert($('.qq-upload-file').html());
         // // alert(responseJSON.id);
+        var str = '<tr>' + 
+            '<td><a href="/media/' + responseJSON.id + '">' + responseJSON.id + '</a></td>' +
+            '<td><a href="' + responseJSON.src + '" class="media"></a></td>' +
+            '<td>' +
+              '<a href="/media/' + responseJSON.id + '/edit" class="btn btn-mini"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a> ' +
+              '<a href="/media/' + responseJSON.id + '" class="btn btn-mini btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><span class="translation_missing" title="translation missing: en.helpers.links.destroy">Destroy</span></a>' +
+            '</td>' +
+          '</tr>';
         // var str = '<li class="span3" id="picture_' + responseJSON.id + '">' +
         //     '<div class="thumbnail">' +
         //       '<img src="' + responseJSON.src + '" alt="">' +
@@ -33,7 +42,9 @@ var uploader = new qq.FileUploader({
              
         //     '</div>' +
         //   '</li>';
-        // $(str).prependTo($('.thumbnails'));
+        $(str).prependTo($('tbody'));
+        $('a[href*="' + responseJSON.src + '"]').media( { width: 300, height: 20 } );
+
 
     }
 });
@@ -46,7 +57,6 @@ var uploader = new qq.FileUploader({
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:audio) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
@@ -55,9 +65,7 @@ var uploader = new qq.FileUploader({
       <tr>
         <td><%= link_to medium.id, medium_path(medium) %></td>
         <!-- <td><%= medium.audio %></td> -->
-        <td><%= link_to "", medium.audio.url, :class => "media" %></td>
-        <td></td>
-        <td><%=l medium.created_at %></td>
+        <td><%= link_to "", medium.audio.url, :class => "media" %></td>        
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_medium_path(medium), :class => 'btn btn-mini' %>

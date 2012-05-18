@@ -2,7 +2,7 @@ class MediaController < ApplicationController
   # GET /media
   # GET /media.json
   def index
-    @media = Medium.all
+    @media = Medium.desc
 
     respond_to do |format|
       format.html # index.html.erb
@@ -49,7 +49,7 @@ class MediaController < ApplicationController
       if @medium.save
         # format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
         # format.json { render json: @medium, status: :created, location: @medium }
-        format.json { render json: {:success => true, :id => @medium.id} }
+        format.json { render json: {:success => true, :id => @medium.id, :src => @medium.audio.url} }
       else
         format.html { render action: "new" }
         format.json { render json: @medium.errors, status: :unprocessable_entity }
