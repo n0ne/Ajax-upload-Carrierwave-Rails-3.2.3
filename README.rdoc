@@ -2,7 +2,7 @@
 
 A small application that demonstrates the work of these programs together.
 
-More information about ajax-upload on his {homepage}[http://valums.com/ajax-upload/} or on Github https://github.com/valums/file-uploader
+More information about ajax-upload on his homepage http://valums.com/ajax-upload/ or on Github https://github.com/valums/file-uploader
 
 You can upload only mp3 files. Pls, check settings for FileUploader.
 
