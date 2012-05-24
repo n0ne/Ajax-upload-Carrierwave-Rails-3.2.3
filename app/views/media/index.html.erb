@@ -9,7 +9,7 @@ var uploader = new qq.FileUploader({
     // pass the dom node (ex. $(selector)[0] for jQuery users)
     // debug: true,
     element: document.getElementById('file-uploader'),
-    allowedExtensions: ['mp3', 'wav'],
+    allowedExtensions: ['mp3'],
     // path to server-side upload script
     action: '<%= media_path %>',
     onComplete: function(id, fileName, responseJSON){
