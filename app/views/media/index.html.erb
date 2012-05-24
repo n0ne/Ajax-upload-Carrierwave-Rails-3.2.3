@@ -21,7 +21,6 @@ var uploader = new qq.FileUploader({
             '<td><a href="/media/' + responseJSON.id + '">' + responseJSON.id + '</a></td>' +
             '<td><a href="' + responseJSON.src + '" class="media"></a></td>' +
             '<td>' +
-              '<a href="/media/' + responseJSON.id + '/edit" class="btn btn-mini"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a> ' +
               '<a href="/media/' + responseJSON.id + '" class="btn btn-mini btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><span class="translation_missing" title="translation missing: en.helpers.links.destroy">Destroy</span></a>' +
             '</td>' +
           '</tr>';        
