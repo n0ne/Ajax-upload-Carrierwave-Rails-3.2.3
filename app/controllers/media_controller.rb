@@ -47,8 +47,6 @@ class MediaController < ApplicationController
 
     respond_to do |format|
       if @medium.save
-        # format.html { redirect_to @medium, notice: 'Medium was successfully created.' }
-        # format.json { render json: @medium, status: :created, location: @medium }
         format.json { render json: {:success => true, :id => @medium.id, :src => @medium.audio.url} }
       else
         format.html { render action: "new" }

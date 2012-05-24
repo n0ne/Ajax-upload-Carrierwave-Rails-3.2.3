@@ -17,8 +17,6 @@ var uploader = new qq.FileUploader({
           console.log($('.qq-upload-file:contains(\'' + fileName + '\')').parent());
           $('.qq-upload-file:contains(\'' + fileName + '\')').parent().delay(2000).fadeOut();
         }
-        // //alert($('.qq-upload-file').html());
-        // // alert(responseJSON.id);
         var str = '<tr>' + 
             '<td><a href="/media/' + responseJSON.id + '">' + responseJSON.id + '</a></td>' +
             '<td><a href="' + responseJSON.src + '" class="media"></a></td>' +
@@ -26,22 +24,7 @@ var uploader = new qq.FileUploader({
               '<a href="/media/' + responseJSON.id + '/edit" class="btn btn-mini"><span class="translation_missing" title="translation missing: en.helpers.links.edit">Edit</span></a> ' +
               '<a href="/media/' + responseJSON.id + '" class="btn btn-mini btn-danger" data-confirm="Are you sure?" data-method="delete" rel="nofollow"><span class="translation_missing" title="translation missing: en.helpers.links.destroy">Destroy</span></a>' +
             '</td>' +
-          '</tr>';
-        // var str = '<li class="span3" id="picture_' + responseJSON.id + '">' +
-        //     '<div class="thumbnail">' +
-        //       '<img src="' + responseJSON.src + '" alt="">' +
-              
-        //           '<a href="<%= edit_medium_path(:id =>' + responseJSON.id + ') %>" class="btn btn-mini">' +
-        //             '<i class="icon-edit "></i>' +
-        //             'Редактировать' +
-        //           '</a>' +
-        //           '<a class="btn btn-mini btn-delete" data-confirm="Вы уверены?" data-method="delete" href="<%= media_path(:id => ' + responseJSON.id + ') %>" ' +
-        //             '<i class="icon-trash"></i>' +
-        //             'Удалить ' +
-        //           '</a>' +
-             
-        //     '</div>' +
-        //   '</li>';
+          '</tr>';        
         $(str).prependTo($('tbody'));
         $('a[href*="' + responseJSON.src + '"]').media( { width: 300, height: 20 } );
 
@@ -67,8 +50,7 @@ var uploader = new qq.FileUploader({
         <!-- <td><%= medium.audio %></td> -->
         <td><%= link_to "", medium.audio.url, :class => "media" %></td>        
         <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_medium_path(medium), :class => 'btn btn-mini' %>
+          
           <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                       medium_path(medium),
                       :method => :delete,
@@ -80,6 +62,3 @@ var uploader = new qq.FileUploader({
   </tbody>
 </table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_medium_path,
-            :class => 'btn btn-primary' %>

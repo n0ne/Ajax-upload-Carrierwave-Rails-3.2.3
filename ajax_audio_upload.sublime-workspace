@@ -55,7 +55,7 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 926,
+				"buffer_size": 944,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "app/views/media/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 3132,
+				"buffer_size": 3829,
 				"line_ending": "Unix"
 			}
 		},
@@ -71,7 +71,7 @@
 			"file": "app/controllers/media_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2094,
+				"buffer_size": 2122,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,7 +79,7 @@
 			"file": "app/models/medium.rb",
 			"settings":
 			{
-				"buffer_size": 103,
+				"buffer_size": 144,
 				"line_ending": "Unix"
 			}
 		},
@@ -105,6 +105,14 @@
 			{
 				"buffer_size": 16045,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 906,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -140,6 +148,7 @@
 	},
 	"file_history":
 	[
+		"/home/none/.cache/.fr-dBMw5E/uploadify.php",
 		"/home/none/rails/ajax_audio_upload/Gemfile",
 		"/home/none/rails/ajax_audio_upload/app/uploaders/audio_uploader.rb",
 		"/home/none/rails/ajax_audio_upload/config/application.rb",
@@ -229,7 +238,6 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
@@ -237,15 +245,15 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 926,
+						"buffer_size": 944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								277,
-								277
+								944,
+								944
 							]
 						],
 						"settings":
@@ -265,15 +273,15 @@
 					"file": "app/views/media/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 3132,
+						"buffer_size": 3829,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1161,
-								1161
+								2383,
+								2412
 							]
 						],
 						"settings":
@@ -283,7 +291,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 17.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -293,15 +301,15 @@
 					"file": "app/controllers/media_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2094,
+						"buffer_size": 2122,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1214,
-								1214
+								925,
+								1402
 							]
 						],
 						"settings":
@@ -311,7 +319,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 204.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -321,15 +329,15 @@
 					"file": "app/models/medium.rb",
 					"settings":
 					{
-						"buffer_size": 103,
+						"buffer_size": 144,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
+								139,
+								139
 							]
 						],
 						"settings":
@@ -382,8 +390,8 @@
 						"selection":
 						[
 							[
-								354,
-								354
+								361,
+								361
 							]
 						],
 						"settings":
@@ -419,6 +427,32 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 1530.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 906,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								531,
+								560
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -477,7 +511,7 @@
 		[
 			[
 				"",
-				"/home/none/rails/ajax_upload/ajax-upload.sublime-project"
+				"/home/none/rails/test_uploadify/test_uploadify.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -486,6 +520,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 294.0,
 	"status_bar_visible": true
 }
